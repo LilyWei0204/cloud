@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script>
+        function resize(originSize,type){
+            var type=type||"x";
+            var widths=document.documentElement.clientWidth;
+            var heights=document.documentElement.clientHeight;
+            if(type=="x"){
+                var scale=widths/originSize*100;
+            }else if(type=="y"){
+                var scale=heights/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+        }
+        window.onload=function () {
+            resize(720,"x");
+            var swiper=new Swiper(".swiper-container",{
+                onInit: function(swiper){
+                    swiperAnimateCache(swiper);
+                    swiperAnimate(swiper);
+                },
+                onSlideChangeEnd: function(swiper){
+                    swiperAnimate(swiper);
+                },
+                pagination: '.swiper-pagination'
+            });
+        }
+
+    </script>
+</head>
+<body>
+
+<!--头部S-->
+    <div class="header">
+        <div class="head main">
+
+        </div>
+    </div>
+<!--头部E-->
+<!--banner S-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"></div>
+            <div class="swiper-slide slide2"></div>
+            <div class="swiper-slide slide3"></div>
+            <div class="swiper-slide slide4"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+<!--banner E-->
+
+<ul class="nav">
+    <li><a href=""><img src="images/apple.png" alt=""><span>国内鲜果</span></a></li>
+    <li><a href=""><img src="images/airapple.png" alt=""><span>国外鲜果</span></a></li>
+    <li><a href=""><img src="images/food.png" alt=""><span>国内零食</span></a></li>
+    <li><a href=""><img src="images/airfood.png" alt=""><span>国外零食</span></a></li>
+</ul>
+<div class="wow"></div>
+
+<!--今日特价 S-->
+<div class="TJ">
+    <div class="tejia main">
+        <div class="tj_left">
+            <img src="images/zml.png" alt="">
+        </div>
+        <div class="tj_right">
+            <a href=""><div class="tj_right_t"></div></a>
+            <div class="tj_right_b">
+                <a href=""><div class="tj_right_bl"><img src="images/tj2.png" alt=""></div></a>
+                <a href=""><div class="tj_right_bl"><img src="images/tj3.png" alt=""></div></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--今日特价 E-->
+<div class="wow"></div>
+
+
+<!--元旦迎新 S-->
+<div class="pub">
+    <div class="newyk">
+        <div class="newy_up main">
+            <i class="newy_r"></i>
+            <span>元旦迎新  超低优惠</span>
+            <a href=""><em>更多</em></a>
+        </div>
+    </div>
+    <div class="new newy_dl new_font">
+        <span class="new_font1">转发朋友圈* <i class="color">立即</i> 享受优惠</span>
+        <span class="new_font2">买的多，优惠多</span>
+        <span>原价58元/斤</span>
+        <span>10斤 <i class="color" style="font-weight: bold">减100元</i></span>
+        <span>1斤减6元</span>
+        <span>2斤减12元</span>
+        <span>3斤减20元</span>
+        <span>5斤减35元</span>
+    </div>
+    <div class="new">
+        <div class="newy_r adv_pic1">
+            <span><i class="color" style="font-size:0.53rem;font-weight: bold">46</i>元/斤 <i style="font-size: 0.18rem;color: #a1887f;">(最低可达)</i> </span>
+            <span>智利 <i class="color">车厘子</i> </span>
+        </div>
+        <div class="newy_r adv_pic2"></div>
+    </div>
+</div>
+<!--元旦 E-->
+
+<div class="wow"></div>
+
+<!--新店开业S-->
+<div class="pub">
+    <div class="newyk">
+        <div class="newy_up main ">
+            <i class="newy_r"></i>
+            <span>新店开业庆  裸价出厂</span>
+            <a href=""><em>更多</em></a>
+        </div>
+    </div>
+    <div class="new">
+        <div class="newy_r adv_pic3 new_font1">
+            <span class="new_font3">蛮<i style="font-size:0.43rem;">拼</i>de</span>
+            <span class="new_font4">近 <i class="color">20</i>款热销品</span>
+            <span class="new_font4"> <i class="color">低于</i>厂价</span>
+            <a href=""><span class="new_font5">点我看更多</span></a>
+        </div>
+        <div class="newy_r adv_pic4">
+            <span>绝对任性</span>
+            <span>门店价：155元/斤</span>
+            <span>抢购价128元/斤</span>
+        </div>
+    </div>
+    <div class="new adv_pic5 new_font">
+       <span>若羌红枣每斤减10元</span>
+       <span>玩大了</span>
+    </div>
+
+
+</div>
+
+<!--新店开业E-->
+</body>
+</html>
