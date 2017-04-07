@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Document</title> 
+<script>
+function arr=[23,6,12,4,5,4,8]
+function delPRE(arr){
+	var newarr=[]；
+	for (var i = 0; i < arr.length; i++) {
+		if( checkREP(!arr[i],newarr)){
+			newarr.push(arr[i])
+		}
+		return newarr
+	};
+	function checkREP(val,arr){
+		for(var i in arr){
+			if(arr[i]==val){
+				return true;
+			}
+		}
+		return false
+	}
+	alert(delPre(arr))
+
+}
+var miao=document.getElementById("miao")
+var fen=document.getElementById("fen")
+var shi=document.getElementById("shi")
+var m=0;
+var f=0;
+var h=0;
+var t=setInterval(function(){
+	m++;
+	if(m<10){
+		miao.innerHTML='0'
+	}else if(10<=m<59){
+		miao.innerHTML=m+'"'
+	}
+	if(m=59){
+		m=-1;
+		miao.innerHTML='0'+m+'"'
+		f++;
+		fen.innerHTML='0'+f+'"'
+	}
+	if(f<=10){
+		fen.innerHTML='0'+f+'"'
+	}else if(10<fen<59){
+		fen.innerHTML=f+'"'
+	}
+	if (fen=59){
+		fen=-1;
+		fen.innerHTML='0'+f+'"'
+	}
+
+
+
+
+
+
+
+
+
+},1000)
+
+
+
+
+
+
+
+
+
+
+</script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          l

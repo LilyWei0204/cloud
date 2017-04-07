@@ -1,0 +1,17 @@
+body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input{
+        padding: 0 ;
+	margin: 0;
+        list-style: none;
+	 font-weight: normal;
+
+
+}
+a{
+	text-decoration: none;
+	
+}
+a:hover{color:#C81623;}   
+.img{
+	border:0;
+}
+
